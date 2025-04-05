@@ -1,0 +1,94 @@
+/* Estilos personalizados para el sistema de optimización de transporte */
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    font-weight: bold;
+    padding: 12px 20px;
+}
+
+.btn {
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.table-responsive {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+footer {
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Animaciones para las alertas */
+.alert {
+    animation: fadeIn 0.5s ease-in-out;
+    border-radius: 8px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para la página de resultados */
+.card-header.bg-primary {
+    background: linear-gradient(45deg, #0d6efd, #0a58ca);
+}
+
+.card-header.bg-success {
+    background: linear-gradient(45deg, #198754, #157347);
+}
+
+.card-header.bg-light {
+    background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+}
+
+/* Media queries para responsive */
+@media (max-width: 768px) {
+    .btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}
